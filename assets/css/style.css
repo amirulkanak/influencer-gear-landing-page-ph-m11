@@ -165,3 +165,127 @@ ul {
 }
 
 /* == Hero section == */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.88rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+
+.hero-content {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    order: 0;
+    align-items: flex-start;
+  }
+}
+
+.hero-tittle {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  color: rgba(58, 58, 58, 1);
+}
+
+@media (min-width: 768px) {
+  .hero-tittle {
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-tittle {
+    font-size: 3.25rem;
+    line-height: 4.375rem;
+  }
+}
+
+.hero-description {
+  margin-top: 1rem;
+  max-width: 31.5625rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  color: rgba(58, 58, 58, 1);
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.hero-btn {
+  margin-top: 1.5rem;
+  border-radius: 2.5625rem;
+  background-color: rgba(224, 44, 109, 1);
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-btn-icon {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.hero-photo {
+  order: 1;
+  margin-top: 1.37rem;
+  height: auto;
+  width: 100%;
+  max-width: 29.6875rem;
+  background-image: url('../images/hero-photo-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .hero-photo {
+    order: 0;
+    margin-top: 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-photo {
+    margin-top: 3.14rem;
+  }
+}
+
+.hero-img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
